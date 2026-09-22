@@ -18,7 +18,8 @@ public class GravityFlip : MonoBehaviour
     {
         if (context.started)
         {
-            rb.gravityScale *= -speed;
+            float diraction = Mathf.Sign(rb.gravityScale) * -1;
+            rb.gravityScale = diraction * speed;
             transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
         }
     }
