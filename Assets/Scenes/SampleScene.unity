@@ -551,6 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7921fa66e86cef4bab02809914ce901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GravityFLicts
+  speed: 5
 --- !u!114 &749557413
 MonoBehaviour:
   m_ObjectHideFlags: 0

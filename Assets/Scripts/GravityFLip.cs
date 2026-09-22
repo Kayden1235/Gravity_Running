@@ -5,6 +5,8 @@ public class GravityFlip : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    public float speed = 5f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,7 +18,7 @@ public class GravityFlip : MonoBehaviour
     {
         if (context.started)
         {
-            rb.gravityScale *= -1;
+            rb.gravityScale *= -speed;
             transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
         }
     }
