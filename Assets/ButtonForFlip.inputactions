@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "ButtonForFlip",
+    "maps": [
+        {
+            "name": "Flip",
+            "id": "6cd2c415-ca31-4d88-a697-489beccd7e04",
+            "actions": [
+                {
+                    "name": "Flip",
+                    "type": "Button",
+                    "id": "51a781fa-8803-49ee-80ee-8f956f3d60f2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "686eb9e3-74bb-4a53-b69e-1ae697b487be",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
