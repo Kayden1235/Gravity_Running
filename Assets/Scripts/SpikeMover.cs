@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.Pool;
 
 public class SpikeMover : MonoBehaviour
 {
     public float speed = 3f;
-    public float destroyX = -13f;   // ngưỡng bên trái, ra khỏi đây thì huỷ
+    public float destroyX = -13f;
+
+    [HideInInspector]
+    public ObjectPool<GameObject> pool;
 
     void Update()
     {
@@ -11,7 +15,10 @@ public class SpikeMover : MonoBehaviour
 
         if (transform.position.x < destroyX)
         {
-            Destroy(gameObject);
+            if (pool != null)
+                pool.Release(gameObject);
+            else
+                Destroy(gameObject);
         }
     }
 }
