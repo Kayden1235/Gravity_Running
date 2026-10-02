@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     private float timeSurvived = 0f;
     private bool isGameOver = false;
 
+    public int CurrentScore => Mathf.FloorToInt(timeSurvived);
+
     void Awake()
     {
         Instance = this;

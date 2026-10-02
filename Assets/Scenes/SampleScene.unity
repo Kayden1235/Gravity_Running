@@ -1161,8 +1161,21 @@ MonoBehaviour:
   spawnX: 12
   floorY: -3.9
   ceilingY: 3.8
-  minInterval: 0.3
-  maxInterval: 3
+  stages:
+  - requiredScore: 0
+    minInterval: 0.3
+    maxInterval: 3
+  - requiredScore: 20
+    minInterval: 0.5
+    maxInterval: 2
+  - requiredScore: 40
+    minInterval: 0.7
+    maxInterval: 1.2
+  corridorChance: 0.2
+  corridorSpacing: 2
+  corridorMinLength: 3
+  corridorMaxLength: 5
+  minGapWorld: 2.5
 --- !u!4 &1015625380
 Transform:
   m_ObjectHideFlags: 0
@@ -1495,7 +1508,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -52.407776, w: 0}
+  m_margin: {x: 0, y: 0, z: -133.2398, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
